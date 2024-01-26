@@ -74,8 +74,15 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
+#img-nina-mobile {display: none;}
+#img-nina {
+  width: 560px;
+  height: 558px;
+  display: block;
+}
+
 #about-me {
 	flex: 2
 }
@@ -249,6 +256,13 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+#img-camera-mobile {display: none;}
+#img-camera {
+  width: 418px;
+  height: 417px;
+  display: block;
+}
+
 /* Minify slider images for performance */
 #slider1 {display:block;}
 #mobile-slider1 {display:none}
@@ -256,6 +270,7 @@ input[type="submit"] {
 #mobile-slider2 {display:none}
 #slider3 {display:block;}
 #mobile-slider3 {display:none}
+
 
 
 @media all and (max-width: 1180px) {
@@ -368,18 +383,36 @@ input[type="submit"] {
 		width: 80%;
 	}
 
-  #img-camera {
+  #img-camera {display: none;}
+  #img-camera-mobile {
 		width: 280px;
+    height: 279px;
+    display: block;
 	}
 
-  #img-nina {
-    width: 280px;
+  #img-nina {display: none;}
+  #img-nina-mobile {
+    width: 420px;
+    height: 419px;
+    display: block;
   }
 
   #slider1 {display: none;}
-  #mobile-slider1 {display: block;}
+  #mobile-slider1 {
+    width: 618px;
+    height: 294px;
+    display: block;
+  }
   #slider2 {display: none;}
-  #mobile-slider2 {display: block;}
+  #mobile-slider2 {
+    width: 618px;
+    height: 294px;
+    display: block;
+  }
   #slider3 {display: none;}
-  #mobile-slider3 {display: block;}
+  #mobile-slider3 {
+    width: 618px;
+    height: 294px;
+    display: block;
+  }
 }
