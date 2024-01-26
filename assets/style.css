@@ -45,6 +45,7 @@ body {
 
 .slider {
   width: 100%;
+  height: auto;
 }
 
 #about {
@@ -76,11 +77,9 @@ body {
 	width: 100%;
 }
 
-#img-nina-mobile {display: none;}
 #img-nina {
-  width: 560px;
-  height: 558px;
-  display: block;
+  width: 455px;
+  height: 455px;
 }
 
 #about-me {
@@ -256,21 +255,10 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-#img-camera-mobile {display: none;}
 #img-camera {
   width: 418px;
   height: 417px;
-  display: block;
 }
-
-/* Minify slider images for performance */
-#slider1 {display:block;}
-#mobile-slider1 {display:none}
-#slider2 {display:block;}
-#mobile-slider2 {display:none}
-#slider3 {display:block;}
-#mobile-slider3 {display:none}
-
 
 
 @media all and (max-width: 1180px) {
@@ -288,6 +276,11 @@ input[type="submit"] {
 	#about-me h6, #about-me p {
 		width: 100%;
 	}
+
+  .slider {
+    width: 100%;
+    max-width: 1180px;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -347,6 +340,11 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+
+  .slider {
+    width: 100%;
+    max-width: 1000px;
+  }
 }
 
 @media all and (max-width: 650px) {
@@ -383,36 +381,18 @@ input[type="submit"] {
 		width: 80%;
 	}
 
-  #img-camera {display: none;}
-  #img-camera-mobile {
+  #img-camera {
 		width: 280px;
     height: 279px;
-    display: block;
 	}
 
-  #img-nina {display: none;}
-  #img-nina-mobile {
-    width: 420px;
-    height: 419px;
-    display: block;
+  #img-nina {
+    width: 288px;
+    height: 288px;
   }
 
-  #slider1 {display: none;}
-  #mobile-slider1 {
-    width: 618px;
-    height: 294px;
-    display: block;
-  }
-  #slider2 {display: none;}
-  #mobile-slider2 {
-    width: 618px;
-    height: 294px;
-    display: block;
-  }
-  #slider3 {display: none;}
-  #mobile-slider3 {
-    width: 618px;
-    height: 294px;
-    display: block;
+  .slider {
+    width: 100%;
+    max-width: 650px;
   }
 }
