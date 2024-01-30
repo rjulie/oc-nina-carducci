@@ -260,6 +260,13 @@ input[type="submit"] {
   height: 417px;
 }
 
+#infos {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1em;
+  margin-left: 1em;
+}
+
 
 @media all and (max-width: 1180px) {
 
