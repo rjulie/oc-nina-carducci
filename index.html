@@ -85,10 +85,10 @@
             <img src="./assets/images/slider/portrait-ryoji-iwata.webp" srcset="./assets/images/slider/portrait-ryoji-iwata-small.webp 650w, ./assets/images/slider/portrait-ryoji-iwata.webp 1500w" class="slider" width="1920" height="888" alt="Homme en costume marchant traversant la rue">
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/slider/concert-nicholas-green.webp" class="slider" width="1920" height="888" alt="Foule dans un concert">
+            <img src="./assets/images/slider/concert-nicholas-green.webp" class="slider" width="1920" height="888" alt="Foule dans un concert" loading="lazy">
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/slider/wedding-edward-cisneros.webp" class="slider" width="1920" height="888" alt="Couple s'embrassant lors de son mariage entouré des invités">
+            <img src="./assets/images/slider/wedding-edward-cisneros.webp" class="slider" width="1920" height="888" alt="Couple s'embrassant lors de son mariage entouré des invités" loading="lazy">
           </div>
         </div>
 
@@ -104,11 +104,10 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <!-- <amp-img alt="A view of the sea" src="./assets/images/nina-carducci-photographer.webp" width="455" height="454" layout="responsive"></amp-img> -->
-        <!-- <img src="./assets/images/nina-carducci-photographer.webp" srcset="./assets/images/nina-carducci-photographer-small.webp 650w, ./assets/images/nina-carducci-photographer.webp 1500w" id="img-nina" width="480" height="479"  alt="portrait de Nina Carducci photographe"/> -->
-
-        <img src="./assets/images/nina-carducci-photographer.webp" id="img-nina" width="480" height="479"  alt="portrait de Nina Carducci photographe"/>
-        <!-- <img src="./assets/images/nina-carducci-photographer.webp" id="img-nina" width="455" height="454"  alt="portrait de Nina Carducci photographe"/> -->
+        <img src="./assets/images/nina-carducci-photographer.webp"
+             srcset="./assets/images/nina-carducci-photographer-small.webp 650w, ./assets/images/nina-carducci-photographer.webp 1500w"
+             id="img-nina" width="480" height="479"  alt="portrait de Nina Carducci photographe"
+        />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
@@ -121,15 +120,15 @@
       <h2 class="title">Portfolio</h2>
       <div class="container py-3">
         <div class="gallery" style="display: none">
-          <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert-aaron-paul.webp" alt="concert avec éclairage rouge et foule avec bras levés"/>
-          <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/company-ali-morshedlou.webp" alt="portrait jeune homme en costume"/>
-          <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/company-jason-goodman.webp" alt="femme souriante dans un bureau"/>
-          <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/wedding-hannah-busing.webp" alt="cadrage sur un homme et d'une femme cherchant à s'attrapper les mains"/>
-          <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-ade-tunji.webp" alt="portrait d'un homme fermant les yeux"/>
-          <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/wedding-jakob-owens.webp" alt="couple marié en tenue de mariage complice dans un parc"/>
-          <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.webp" alt="jeune fille avec des lunettes devant un grillage"/>
-          <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert-austin-neill.webp" alt="chanteur bras en l'air à un concert"/>
-          <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/company-mateus-campos-felipe.webp" alt="femme riant devant un ordinateur"/>
+          <img data-gallery-tag="Concert" class="gallery-item img-fluid" src="./assets/images/gallery/concerts/concert-aaron-paul.webp" alt="concert avec éclairage rouge et foule avec bras levés"/>
+          <img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="./assets/images/gallery/entreprise/company-ali-morshedlou.webp" alt="portrait jeune homme en costume"/>
+          <img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="./assets/images/gallery/entreprise/company-jason-goodman.webp" alt="femme souriante dans un bureau"/>
+          <img data-gallery-tag="Mariages" class="gallery-item img-fluid" src="./assets/images/gallery/mariage/wedding-hannah-busing.webp" alt="cadrage sur un homme et d'une femme cherchant à s'attrapper les mains"/>
+          <img data-gallery-tag="Portrait" class="gallery-item img-fluid" src="./assets/images/gallery/portraits/portrait-ade-tunji.webp" alt="portrait d'un homme fermant les yeux"/>
+          <img data-gallery-tag="Mariages" class="gallery-item img-fluid" src="./assets/images/gallery/mariage/wedding-jakob-owens.webp" alt="couple marié en tenue de mariage complice dans un parc"/>
+          <img data-gallery-tag="Portrait" class="gallery-item img-fluid" src="./assets/images/gallery/portraits/portrait-nino-van-prattenburg.webp" alt="jeune fille avec des lunettes devant un grillage"/>
+          <img data-gallery-tag="Concert" class="gallery-item img-fluid" src="./assets/images/gallery/concerts/concert-austin-neill.webp" alt="chanteur bras en l'air à un concert"/>
+          <img data-gallery-tag="Entreprises" class="gallery-item img-fluid" src="./assets/images/gallery/entreprise/company-mateus-campos-felipe.webp" alt="femme riant devant un ordinateur"/>
         </div>
       </div>
       <div class="quote">
@@ -191,11 +190,11 @@
           <h3>Une question ? Une demande de devis ?</h3>
           <p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
           <form action="" method="post">
-            <label>Nom</label>
+            <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" aria-label="nom">
-            <label>Email</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" aria-label="email">
-            <label>Message</label>
+            <label for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10" aria-label="message"></textarea>
             <input type="submit" value="Envoyer"/>
           </form>
