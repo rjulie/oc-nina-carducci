@@ -107,6 +107,7 @@ body {
 	padding-block: 2em;
   font-size: 28px;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
@@ -280,7 +281,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h3, #about-me p {
 		width: 100%;
 	}
 
@@ -355,6 +356,11 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
+
+  .title{
+    font-size: 24px;
+  }
+
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
